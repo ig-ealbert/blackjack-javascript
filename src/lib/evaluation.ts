@@ -39,7 +39,7 @@ export function determineWinner(player: number, dealer: number) {
 export function getTotalHandValue(cards: cardInfo[]) {
   let total = 0;
   for (let i = 0; i < cards.length; i++) {
-    total += cards[i].value < 10 ? cards[1].value : 10;
+    total += cards[i].value < 10 ? cards[i].value : 10;
   }
   for (let i = 0; i < cards.length; i++) {
     if (cards[i].value === 1 && total < 12) {
