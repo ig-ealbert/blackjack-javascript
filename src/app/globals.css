@@ -1,0 +1,23 @@
+.card {
+  height: 75px;
+  width: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid black;
+  margin-right: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+th {
+  text-align: left;
+}
+
+td, th {
+  padding-right: 100px;
+}
+
+input {
+  margin-right: 5px;
+}
