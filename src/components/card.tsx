@@ -1,4 +1,3 @@
-'use client'
 import { getImage, getText } from "@/lib/card";
 import { cardProps } from "@/types/cardProps";
 import React from "react";
@@ -10,8 +9,8 @@ export default function Card(props: cardProps) {
   React.useEffect(() => setText(getText(props)), [props]);
 
   return (
-  <span className={"card"} style={{ backgroundImage: image }}>
-    {text}
-  </span>
+    <span className={"card"} style={{ backgroundImage: image }}>
+      {text}
+    </span>
   );
 }
